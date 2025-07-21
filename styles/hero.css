@@ -5,6 +5,7 @@
     margin-inline: auto;
 
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -42,6 +43,7 @@
 
     & .buttons {
         display: flex;
+        
         gap: 2rem;
         margin-top: 3rem;
 
@@ -83,12 +85,11 @@
     }
 
     /* patins */
-    & > div:nth-child(2) {
-        display: block;
-        
-        width: 100%;
-        max-width: 30.5rem;
-        height: 30.5rem;
+     & > div:nth-child(2) {
+       display: block;
+       width: 100%;
+       max-width: 30.5rem;
+       height: 30.5rem;
 
         & .content {
            width: 100%;
@@ -228,4 +229,146 @@
     100% {
         transform: translateY(-15rem);
     }
+}
+
+@media (width <=375px) {
+
+    .hero {
+
+       
+        max-width: 23.47rem;
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        margin-inline: auto;
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+        align-items: center;
+        justify-content: space-between;
+        
+        overflow: hidden;
+
+        & h1 {
+            max-width: 20rem;
+            font-size: 2rem;
+           
+           
+        }
+        
+        & h1 div {
+            display: inline-block;
+            overflow: hidden;
+            height: 2.5rem;
+            width: min-content;
+            vertical-align: bottom;
+        }
+
+         
+        & .buttons {
+            display: flex;
+            flex-direction: column-reverse;
+            
+            & .button {
+            
+
+                &.play {
+
+                  display: flex;
+                  height: 5rem;
+
+                  padding-left: 6.25rem;
+
+                  position: relative;
+
+
+                    & span {
+                      position: absolute;
+                      top: 0.625rem;
+                      right: 14.375rem;
+                    }
+
+               
+                
+                }
+
+                &:hover {
+                    transform: none;
+                }
+
+            }
+            
+            
+
+
+        }
+
+        & > div:nth-child(2) {
+       display: block;
+       width: 100%;
+       max-width: 19.5rem;
+       height: 19.5rem;
+
+        & .content {
+           width: 100%;
+           height: 100%;
+           position: relative;
+
+           
+
+        }
+        
+        
+        & img {
+            position: absolute;
+            width: 100%;
+           
+        }
+
+        & img[src*="Ellipse"] {
+            
+            height: 30.7rem;
+            top: -35%;
+            left: 3.5%;
+
+
+            transform: none;
+            animation: none;
+        }
+
+        & img[src*="patins"] {
+            z-index: 1;
+            object-fit: cover;
+            height: 16.875rem;
+
+            transform: none;
+            animation: none;
+        }
+
+        & img[src*="Stars 1"] {
+            max-width: 3.5625rem;
+            top: 25%;
+            height: 2.86rem;
+            object-fit: contain;
+            z-index: 0;
+            left: 1.8%;
+
+            opacity: 1;
+            transform: none;
+            animation: none;
+        }
+
+        & img[src*="Stars 2"] {
+            max-width: 1.59rem;
+            
+            bottom: 39%;
+            height: 2.39rem;
+
+            transform: translateX(400%);
+            animation: slideIn 2.2s 800ms ease both;
+        }
+       
+    }
+
+    }   
 }

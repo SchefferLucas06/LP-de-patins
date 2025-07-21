@@ -31,9 +31,7 @@ html, button {
     font: 500 1rem/1.5 var(--ff-base);
 }
 
-html {
-   
-}
+
 
 h1, h2 {
     font-family: 'Syne', sans-serif;
@@ -52,4 +50,9 @@ h2 {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+@media (width <=375px) {
+     
+    
 }
