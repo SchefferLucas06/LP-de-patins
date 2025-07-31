@@ -14,7 +14,7 @@
         max-width: 40rem;
     }
 
-    & h1 div{
+    & h1 div {
         display: inline-block;
         overflow: hidden;
         height: 5rem;
@@ -252,22 +252,38 @@
         & h1 {
             max-width: 20rem;
             font-size: 2rem;
-           
-           
+
+            & div {
+                display: inline-block;
+                max-width: 161px;
+                height: 40px;
+                
+            }
+
+            & div span {
+                display: inline-block;
+                overflow: hidden;
+                height: 5rem;
+                width: min-content;
+                vertical-align: bottom;
+            }
+
+            & span {
+                display: block;
+            }
+
+
         }
-        
-        & h1 div {
-            display: inline-block;
-            overflow: hidden;
-            height: 2.5rem;
-            width: min-content;
-            vertical-align: bottom;
-        }
+
+
+           
+
+       
 
          
         & .buttons {
-            display: flex;
-            flex-direction: column-reverse;
+          display: flex;
+          flex-direction: column-reverse;
             
             & .button {
             
@@ -301,14 +317,15 @@
             
 
 
+        
         }
 
         & > div:nth-child(2) {
-       display: block;
-       width: 100%;
-       max-width: 19.5rem;
-       height: 19.5rem;
-
+           display: block;
+           width: 100%;
+           max-width: 19.5rem;
+           height: 19.5rem;
+        
         & .content {
            width: 100%;
            height: 100%;

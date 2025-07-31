@@ -106,3 +106,42 @@ footer {
        
     }
 }
+
+@media(width <=375px) {
+
+    footer {
+         
+        max-width: 23.43rem;
+        height: 22rem;
+
+        padding: 3rem 1.5rem 1.5rem;
+
+        display: grid;
+       
+
+        gap: 3rem;
+
+        & nav {
+           
+           
+
+           display: flex;
+           flex-direction: column;
+
+           gap: 1.5rem;
+
+           & a:hover::after {
+            all: unset;
+           }
+
+            
+        }
+
+        .social-links {
+
+            & a:hover::before {
+                all: unset;
+            }
+        }
+    }
+}
